@@ -19,6 +19,7 @@ startBtn.addEventListener("click", () => {
 
 yesBtn.addEventListener("click", () => {
   showScreen(successScreen);
+  noBtn.style.display = "none";
   confetti({
     particleCount: 150,
     spread: 80,
