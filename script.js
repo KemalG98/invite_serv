@@ -36,7 +36,7 @@ const noTexts = [
 ];
 
 let noClickCount = 0;
-const NO_BTN_MIN_SCALE = 0.85;
+const NO_BTN_MIN_SCALE = 0.95;
 
 function moveNoButton() {
   noClickCount++;
@@ -54,7 +54,7 @@ function moveNoButton() {
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
 
-  const scale = Math.max(NO_BTN_MIN_SCALE, 1 - noClickCount * 0.03);
+  const scale = Math.max(NO_BTN_MIN_SCALE, 1 - noClickCount * 0.01);
   noBtn.style.transform = `scale(${scale})`;
 }
 
