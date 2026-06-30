@@ -50,6 +50,9 @@ function moveNoButton() {
   const randomX = Math.max(10, Math.floor(Math.random() * maxX));
   const randomY = Math.max(10, Math.floor(Math.random() * maxY));
 
+  if (noBtn.parentElement !== document.body) {
+    document.body.appendChild(noBtn);
+  }
   noBtn.style.position = "fixed";
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
