@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #ffe1ec, #fff5f8);
+  overflow: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.screen.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  padding: 28px 20px;
+  border-radius: 28px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.card h1, .card h2 {
+  margin-top: 0;
+  color: #d6336c;
+}
+
+.hero-emoji {
+  font-size: 56px;
+  margin-bottom: 8px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  min-height: 48px;
+  font-size: 18px;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#start-btn, #yes-btn {
+  background: #ff6b9d;
+  color: white;
+}
+
+#no-btn {
+  background: #f1f1f1;
+  color: #555;
+}

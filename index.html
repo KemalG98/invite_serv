@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Важный вопрос ❤️</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="screen active" id="welcome-screen">
+      <div class="card">
+        <h1>Привет, малышка ❤️</h1>
+        <p>У меня есть к тебе важный вопрос...</p>
+        <button id="start-btn">Продолжить</button>
+      </div>
+    </section>
+
+    <section class="screen" id="question-screen">
+      <div class="card">
+        <div class="hero-emoji" id="hero-emoji">🐱</div>
+        <h2>Кристя, давай будем обниматься и не отпускать друг-друга даже на секундочку?</h2>
+        <div class="buttons">
+          <button id="yes-btn">Да ❤️</button>
+          <button id="no-btn">Нет 💔</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="success-screen">
+      <div class="card">
+        <div class="hero-emoji">🎉❤️🎉</div>
+        <h2>Урааа ❤️</h2>
+        <p>Я знал, что ты согласишься!</p>
+        <p>Начинаем прямо сейчас!</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
