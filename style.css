@@ -120,3 +120,42 @@ button {
     transform: translateY(-8px);
   }
 }
+
+.show-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+  padding: 12px 14px;
+  min-height: 48px;
+  border: 1px solid #ffd3e2;
+  border-radius: 16px;
+  background: #fff6fa;
+  color: #d6336c;
+  text-align: left;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.show-link:active {
+  transform: scale(0.98);
+  background: #ffe9f1;
+}
+
+.show-link-emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.show-link-body strong {
+  display: block;
+  font-size: 17px;
+}
+
+.show-link-body small {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: #8d8d8d;
+}
